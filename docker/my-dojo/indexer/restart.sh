@@ -6,7 +6,7 @@ indexer_options=(
   --index-batch-size="$INDEXER_BATCH_SIZE"
   --jsonrpc-import
   --db-dir="/home/indexer/db"
-  --electrs-rpc-addr="172.28.1.6:50001"
+  --electrum-rpc-addr="172.28.1.6:50001"
   --daemon-rpc-addr="$BITCOIND_IP:$BITCOIND_RPC_PORT"
   --txid-limit="$INDEXER_TXID_LIMIT"
   --blocktxids-cache-size-mb="$INDEXER_BLK_TXIDS_CACHE_SIZE_MB"
