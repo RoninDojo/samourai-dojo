@@ -78,6 +78,7 @@ services:
       context: ./tor
     env_file:
       - ./.env
+      - ./conf/docker-indexer.conf
       - ./conf/docker-explorer.conf
       - ./conf/docker-tor.conf
     restart: always
