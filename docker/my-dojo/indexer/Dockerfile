@@ -23,6 +23,11 @@ COPY    ./restart.sh /restart.sh
 RUN     chown indexer:indexer /restart.sh && \
         chmod 777 /restart.sh
 
+# Copy electrs.toml
+COPY    ./electrs.toml /electrs.toml
+RUN     chown indexer:indexer /electrs.toml && \
+        chmod 777 /electrs.toml
+
 # Copy wait-for-it script
 COPY    ./wait-for-it.sh /wait-for-it.sh
 RUN     chown indexer:indexer /wait-for-it.sh && \
