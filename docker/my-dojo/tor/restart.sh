@@ -28,7 +28,7 @@ tor_options=(
 if [ "$INDEXER_INSTALL" == "on" ]; then
   tor_options+=(--HiddenServiceDir /var/lib/tor/hsv3electrs)
   tor_options+=(--HiddenServiceVersion 3)
-  tor_options+=(--HiddenServicePort "50001 172.29.1.6:50001")
+  tor_options+=(--HiddenServicePort "50001 172.28.1.6:50001")
   tor_options+=(--HiddenServiceDirGroupReadable 1)
 fi
 
