@@ -17,7 +17,5 @@ if [ "$COMMON_BTC_NETWORK" == "testnet" ]; then
 else
   bitcoind_options+=(--network="mainnet")
 fi
-# Generate electrs.toml with bitcoind rpc credentials
-echo "cookie = \"$BITCOIND_RPC_USER:$BITCOIND_RPC_PASSWORD\"" >  /home/user/electrs.toml
 
 electrs "${indexer_options[@]}"
