@@ -5,7 +5,7 @@ ENV     INDEXER_VERSION     0.8.2
 ENV     INDEXER_URL         https://github.com/romanz/electrs/archive
 
 RUN     apt-get update && \
-        apt-get install -y clang cmake git && \
+        apt-get install -y clang cmake git wget && \
         apt-get install -y libsnappy-dev
 
 # Create group and user indexer
