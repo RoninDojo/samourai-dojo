@@ -4,8 +4,13 @@ ENV     LOGS_DIR             /data/logs
 ENV     APP_DIR              /home/node/app
 
 ENV     EXPLORER_URL         https://github.com/janoside/btc-rpc-explorer/archive
-ENV     EXPLORER_VERSION     1.1.5
+ENV     EXPLORER_VERSION     1.1.8
 
+
+# Install netcat
+RUN     set -ex && \
+        apt-get update && \
+        apt-get install -y netcat
 
 # Create logs  and apps directory
 RUN     mkdir -p "$LOGS_DIR" && \
